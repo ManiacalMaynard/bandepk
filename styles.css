@@ -1,3 +1,4 @@
+/*   Basic Set Up and Reset   */
 :root {
   font-size: 14px;
   --red: hsl(0, 67%, 35%);
@@ -19,53 +20,15 @@ body {
   font-size: 1rem;
 }
 
-div {
-  height: 20vh;
-  display: flex;
-  flex-direction: row nowrap;
-  justify-content: center;
-  align-items: center;
+a {
+  text-decoration: none;
 }
 
-.one {
-  color: var(--dark-sage);
-  background-color: var(--light-sage);
-}
+/*   ------   NAVIGATION   ------   */
 
-.one > button {
-  padding: 8px;
-  border: 2px solid var(--red);
-  border-radius: 0.5rem;
-  color: var(--sage);
-  background-color: var(--light-sage);
-  font-weight: bold;
-  transition: 300ms;
-}
-
-.one > button:hover,
-.one > button:focus {
-  color: var(--light-sage);
-  background-color: var(--red);
-  /* scale: 1.05; */
-  /* filter: drop-shadow(0px 0px 5px var(--sage)); */
-}
-
-.two {
-  color: var(--dark-sage);
-  background-color: var(--mid-sage);
-}
-
-.three {
-  color: var(--dark-sage);
-  background-color: var(--sage);
-}
-
-.four {
-  color: var(--light-sage);
+nav {
+  width: 100%;
+  padding: 3rem;
   background-color: var(--dark-sage);
-}
-
-.five {
   color: var(--light-sage);
-  background-color: var(--red);
 }
