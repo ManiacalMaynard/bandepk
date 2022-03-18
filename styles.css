@@ -1,11 +1,17 @@
-/*   Basic Set Up and Reset   */
+/*     -----     Basic Set Up, Variables, and Reset     -----     */
 :root {
-  font-size: 14px;
+  font-size: 100%;
   --red: hsl(0, 67%, 35%);
   --sage: hsl(80, 25%, 40%);
   --dark-sage: hsl(80, 25%, 10%);
   --mid-sage: hsl(80, 25%, 66%);
   --light-sage: hsl(80, 25%, 90%);
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 112.5%;
+  }
 }
 
 *,
@@ -16,15 +22,11 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 1rem;
-}
-
 a {
   text-decoration: none;
 }
 
-/*   ------   NAVIGATION   ------   */
+/*     ------     NAVIGATION     ------     */
 
 nav {
   width: 100%;
