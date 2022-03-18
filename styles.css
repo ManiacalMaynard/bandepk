@@ -1,6 +1,6 @@
 /*     -----     Basic Set Up, Variables, and Reset     -----     */
 :root {
-  font-size: 100%;
+  /* font-size: 100%; */
   --red: hsl(0, 67%, 35%);
   --sage: hsl(80, 25%, 40%);
   --dark-sage: hsl(80, 25%, 10%);
@@ -14,6 +14,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -22,15 +26,71 @@
   box-sizing: border-box;
 }
 
+/*     -----     ESSENTIAL ELEMENTS     -----     */
+
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
+}
+
+nav,
+header,
+section,
+footer {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  background-image: url("./images/pexels-david-yu-1749822.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+
+footer {
+  display: flex;
 }
 
 /*     ------     NAVIGATION     ------     */
 
 nav {
-  width: 100%;
-  padding: 3rem;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+}
+
+.navLinks > a {
+  padding-left: 1rem;
+}
+
+/*     -----     CONTENT STYLES     -----     */
+
+#audioPlayer {
+}
+
+#bandBio {
+  flex-direction: column;
+  text-align: left;
+}
+
+#contact {
+  justify-content: space-between;
+}
+
+.darkSection {
   background-color: var(--dark-sage);
   color: var(--light-sage);
+}
+
+.darkSection a {
+  color: var(--mid-sage);
 }
