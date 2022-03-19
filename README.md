@@ -5,8 +5,11 @@ Your friend in a band needs a quick page? Here's a template that's functional, a
 ## Content
 
 [introduction](#introduction)
+
 [user story](#user-story)
+
 [to-do list](#to-do-list)
+
 [license](#license)
 
 ## Introduction
